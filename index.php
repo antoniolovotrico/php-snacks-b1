@@ -14,7 +14,7 @@ $matches = [
     ],
     [
         'match' => "Capo d'Orlando - Virtus",
-        "result" => "78 -35"
+        "result" => "78 - 35"
     ],
     [
         'match' => "Reggio - Inter",
@@ -22,6 +22,15 @@ $matches = [
     ],
 ];
 ?>
+
+<!-- PHP Snack 2:
+Passare come parametri GET name, mail e age e verificare (cercando i metodi che non
+conosciamo nella documentazione) che:
+1. name sia più lungo di 3 caratteri,
+2. mail contenga un punto e una chiocciola
+3. age sia un numero.
+Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,13 +41,15 @@ $matches = [
         <title>php-snacks-b1</title>
     </head>
     <body>
-        <h1>4 Giornata Serie A1</h1>
-        <h2><?php for ($i = 0; $i < count($matches); $i++) {
+        <h2>PHP Snack 1:</h2>
+        <h3><?php for ($i = 0; $i < count($matches); $i++) {
                     print $matches[$i]['match'] ." | ". $matches[$i]['result']."</br>";
                     }
             ?>
-        </h2>
-        
+        </h3>
+        <hr>
+        <hr>
+        <h2>PHP Snack 2:</h2>
             
                 
                 
