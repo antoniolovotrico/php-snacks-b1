@@ -66,7 +66,7 @@ $age = $_GET['age'];
             <input type="submit" value="Invia">
         </form>
         <h3>
-            <?php if (strlen($name) > 3 && strpos($mail, "@" ) && is_numeric($age) ){
+            <?php if (strlen($name) > 3 && strpos($mail, "@" ) && strpos($mail, "." ) && is_numeric($age) ){
                 echo "Accesso riuscito";
                   } else {
                     echo "Accesso negato" ;
