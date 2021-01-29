@@ -33,14 +33,15 @@ $matches = [
     </head>
     <body>
         <h1>4 Giornata Serie A1</h1>
-        <ul>
-            <li>
-                <?php for ($i = 0; $i < count($matches); $i++) {
-                    print $matches[$i]['match'] ." | ". $matches[$i]['result'];
-                }
-                ?>
+        <h2><?php for ($i = 0; $i < count($matches); $i++) {
+                    print $matches[$i]['match'] ." | ". $matches[$i]['result']."</br>";
+                    }
+            ?>
+        </h2>
+        
+            
                 
-            </li>
-        </ul>
+                
+            
     </body>
 </html>
