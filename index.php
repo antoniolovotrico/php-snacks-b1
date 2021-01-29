@@ -30,7 +30,13 @@ conosciamo nella documentazione) che:
 2. mail contenga un punto e una chiocciola
 3. age sia un numero.
 Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” -->
+<?php 
+$name = $_GET['name'];
+$mail = $_GET['mail'];
+$age = $_GET['age'];
 
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +56,15 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” 
         <hr>
         <hr>
         <h2>PHP Snack 2:</h2>
-            
+        <h3>
+            <?php echo $name ."  ". $mail ."  ". $age ?>
+        </h3> 
+        <form action="" method="get">
+            <input type="text" name="name" id="">
+            <input type="text" name="mail" id="">
+            <input type="text" name="age" id="">
+            <input type="submit" value="Invia">
+        </form>
                 
                 
             
